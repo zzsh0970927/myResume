@@ -1,0 +1,35 @@
+{
+    "name": "徐偉凱",
+    "enName": "Kevin Hsu",
+    "title": "",
+    "subTitle": "I'm Kevin Hsu / 徐偉凱",
+    "description": [
+      "兩年全端程式設計師經歷。",
+      "熟悉Javascript、CSS、jQuery，",
+      "有使用Vue.js架設網頁的經驗。",
+      "對使用者使用介面和體驗有興趣，",
+      "樂於學習新技術與知識。",
+      "空閒之餘喜歡健身、打籃球及單車等運動。"
+    ],
+    "contact": [
+      {
+        "icon": "mobile-alt",
+        "data": "0976729263"
+      },
+      {
+        "icon": "envelope",
+        "data": "zzsh0970927@gmail.com"
+      }
+    ],
+    "links": [
+      {
+        "iconName": "github",
+        "link": "https://github.com/zzsh0970927"
+      },
+      {
+        "iconName": "github-alt",
+        "link": "https://zzsh0970927.github.io/"
+      }
+    ]
+  }
+  
