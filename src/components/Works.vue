@@ -47,7 +47,7 @@ export default {
                    title: '我的履歷',
                    tags: ['Vue Cli 3','HTML','CSS3','JavaScript','JQuery','ES6'],
                    image: ImgWork_myResume,
-                   link: 'https://www.gamer.com.tw/',
+                   link: 'https://zzsh0970927.github.io/myResume/',
                    description: [
                        '熟悉Vue.js 從學習寫履歷開始',
                        '學習如何使用Vue.js建置Project、Vue.js語法、ES6語法'
