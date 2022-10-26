@@ -42,13 +42,27 @@
 </template>
 
 <style scoped>
+@media (max-width: 400px){
+    .aboutme {
+        max-width: 400px;
+    }
+    .container-body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .container-word{
+        padding-top: 1rem;
+    }
+}
 img {
     display: block;
 }
 .aboutme {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
 
     position: relative;
     transform: translateX(150px);

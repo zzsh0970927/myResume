@@ -105,9 +105,8 @@ export default {
 
 <style scoped>
 .experience{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
-    text-align: left;
     padding: 2rem; 
     
     position: relative;
@@ -119,6 +118,7 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: left;
 }
 .container-add{
     transform: translateY(0);

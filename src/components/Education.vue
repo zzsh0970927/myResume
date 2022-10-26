@@ -2,7 +2,7 @@
     <div id="education" class="education" @scroll="handleScroll">
         <h2 class="title">{{title}}</h2>
         <h2 class="subTitle">{{subTitle}}</h2>
-        <div class="container"></div>
+        <div class="container">
         <div class="content">
             <ul class="ul-list">
                 <li class="item ul-list-item slideInUp" v-for="item in education" :key="item.index">
@@ -13,6 +13,7 @@
                     </ul>
                 </li>
             </ul>
+        </div>
         </div>
     </div>
 </template>
@@ -57,9 +58,8 @@ export default {
 
 <style scoped>
 .education{
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;  
+    /* max-width: 1200px; */
+    margin: 0 auto;  
     padding: 2rem;
     
     position: relative;
@@ -71,6 +71,7 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: left;
 }
 .container-add{
     transform: translateY(0);

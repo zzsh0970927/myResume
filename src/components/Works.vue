@@ -93,6 +93,13 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 400px){
+    .mx-auto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }    
+}
 img{
     display: block;
     position: absolute;
@@ -103,7 +110,7 @@ img{
 .work{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
 
     position: relative;
     opacity: 0;

@@ -1,14 +1,14 @@
 <template>
     <div id="skill" class="skill" @scroll="handleScroll">
         <div class="container">
-            <h1 class="title">{{title}}</h1>
+            <h2 class="title">{{title}}</h2>
             <h2 class="subTitle">{{subTitle}}</h2>
             <div class="row my-4">
                 <div class="innerMy-4" v-for="item in skills" :key="item.index">
                     <div class="skill-item">
                         <div class="span-icon">
                             <span class="">
-                                <img :src="item.icon"/>
+                                <img class="span-img" :src="item.icon"/>
                             </span>
                         </div>
                         <h3 class="h3-title">{{item.title}}</h3>
@@ -51,11 +51,10 @@ export default {
                 {
                     icon: ImgFrontEnd,
                     title: '前端技術',
-                    skillList: ['HTML','CSS','JavaScript','Vue.js','jQuery','Bootstrap','Ajax'],
+                    skillList: ['HTML','CSS','JavaScript','Vue.js','jQuery','Bootstrap'],
                     info: [
                         '使用 HTML、CSS、SCSS 切版、排版並套用 Bootstrap',
                         '結合 JavaScript、jQuery 做動畫效果',
-                        '應用 Ajax 串接 API 資料',
                         '利用 Vue.js 製作履歷'
                     ]
                 },
@@ -107,11 +106,26 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 400px){
+    .skill{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .my-4{
+        width: 400px;
+    }
+}
 .skill{
     text-align: left;
-    max-width: 1800px;
+    /* max-width: 1800px; */
     margin: 0 auto;
-    padding: 2rem;
+    /* padding: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
     
     position: relative;
     transform: scale(0);
@@ -140,9 +154,14 @@ export default {
     margin: 1rem;
     background-color: #f2f2f2;
     border-radius: 10px;
+    padding: 2rem;
 }
 .my-4 :hover div{
     transform: scale(1.05);
+}
+.h4-content{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 .skill-item{
     text-align: center;
@@ -166,7 +185,7 @@ export default {
     font-size: 1rem;    
 }
 .span-icon{
-    margin: 1rem;
+    margin: 0.75rem;
 }
 h3{
     font-size: 1.25rem;

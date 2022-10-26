@@ -79,10 +79,27 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 400px){
+    .title{
+        width: 400px;
+        word-break: break-all;
+    }
+    .container-body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+    }
+
+}
+img {
+    display: block;
+    max-width: 100%;
+}
 .specialexperience{
     /* max-width: 1200px; */
     margin: 0%;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
 
     position: relative;
     transform: rotateX(180deg) scale(0);
@@ -107,7 +124,8 @@ export default {
     line-height: 1.5rem;
 }
 .imgFuen12{
-    width: 635px;
+    width: 600px;
+    height: 300px;
 }
 .title{
     font-size: 3rem;

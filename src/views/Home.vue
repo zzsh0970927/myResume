@@ -62,6 +62,13 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 400px){
+  .row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .container{
   display: flex;
   align-items: center;

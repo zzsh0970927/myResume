@@ -3,8 +3,12 @@
         <div class="container">
             <div class="table-cell text-center">
                 <div class="container inner">
-                    <h2 class="title">{{title}}</h2>
-                    <h3 class="title-description">I am a front-end developer travel and sports enthusiast</h3>
+                    <div class="inner-title">
+                        <h2 class="title">{{title}}</h2>
+                    </div>
+                    <div class="inner-description">
+                        <h3 class="title-description">I am a front-end developer travel and sports enthusiast</h3>
+                    </div>
                     <a href="#about" class="scroll home-s-btn hor-center"><span class="dot center"></span></a>
                 </div>
             </div>
@@ -50,6 +54,15 @@ export default {
 </script>
 
 <style scope>
+@media (max-width: 400px){
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 0.75rem;
+    }
+}
+
 .kvtyper{
     margin: 0px;
     padding: 0px; 
@@ -65,20 +78,25 @@ export default {
 .vue-typer .custom.char.typed {
     color: #bfbfbf;
 }
-.inner{
+.inner-title{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     color: azure;
+    font-size: 3rem;
+    width: 400px;
+}
+.inner-description{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    color: azure;
     font-size: 1.5rem;
 }
-.title{
-    font-size: 3rem;
-}
-h3.title-description{
+.title-description{
     margin: 0 auto;
-    padding: 20px 0;
     white-space: nowrap;
     overflow: hidden;
     animation: description 7.5s infinite steps(53, end);
