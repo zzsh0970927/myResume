@@ -42,7 +42,7 @@
 </template>
 
 <style scoped>
-@media (max-width: 400px){
+@media (max-width: 540px){
     .aboutme {
         max-width: 400px;
     }

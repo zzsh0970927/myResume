@@ -93,7 +93,7 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 400px){
+@media (max-width: 540px){
     .mx-auto{
         display: flex;
         align-items: center;

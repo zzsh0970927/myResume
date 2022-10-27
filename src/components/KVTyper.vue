@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style scope>
-@media (max-width: 400px){
+@media (max-width: 540px){
     h2{
         font-size: 1.5rem;
     }
@@ -85,7 +85,7 @@ export default {
     transform: translate(-50%,-50%);
     color: azure;
     font-size: 3rem;
-    width: 400px;
+    width: 380px;
 }
 .inner-description{
     position: absolute;

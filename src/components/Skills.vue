@@ -106,7 +106,7 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 400px){
+@media (max-width: 540px){
     .skill{
         padding-top: 2rem;
         padding-bottom: 2rem;
